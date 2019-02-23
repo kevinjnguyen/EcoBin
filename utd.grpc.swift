@@ -31,6 +31,12 @@ fileprivate final class Hackutd_recycleTestEchoCallBase: ClientCallUnaryBase<Hac
   override class var method: String { return "/hackutd.recycle/TestEcho" }
 }
 
+internal protocol Hackutd_recycleMoveTrashDividersCall: ClientCallUnary {}
+
+fileprivate final class Hackutd_recycleMoveTrashDividersCallBase: ClientCallUnaryBase<Hackutd_Action, Hackutd_Reply>, Hackutd_recycleMoveTrashDividersCall {
+  override class var method: String { return "/hackutd.recycle/MoveTrashDividers" }
+}
+
 
 /// Instantiate Hackutd_recycleServiceClient, then call methods of this protocol to make API calls.
 internal protocol Hackutd_recycleService: ServiceClient {
@@ -38,6 +44,11 @@ internal protocol Hackutd_recycleService: ServiceClient {
   func testEcho(_ request: Hackutd_Status) throws -> Hackutd_Reply
   /// Asynchronous. Unary.
   func testEcho(_ request: Hackutd_Status, completion: @escaping (Hackutd_Reply?, CallResult) -> Void) throws -> Hackutd_recycleTestEchoCall
+
+  /// Synchronous. Unary.
+  func moveTrashDividers(_ request: Hackutd_Action) throws -> Hackutd_Reply
+  /// Asynchronous. Unary.
+  func moveTrashDividers(_ request: Hackutd_Action, completion: @escaping (Hackutd_Reply?, CallResult) -> Void) throws -> Hackutd_recycleMoveTrashDividersCall
 
 }
 
@@ -50,6 +61,17 @@ internal final class Hackutd_recycleServiceClient: ServiceClientBase, Hackutd_re
   /// Asynchronous. Unary.
   internal func testEcho(_ request: Hackutd_Status, completion: @escaping (Hackutd_Reply?, CallResult) -> Void) throws -> Hackutd_recycleTestEchoCall {
     return try Hackutd_recycleTestEchoCallBase(channel)
+      .start(request: request, metadata: metadata, completion: completion)
+  }
+
+  /// Synchronous. Unary.
+  internal func moveTrashDividers(_ request: Hackutd_Action) throws -> Hackutd_Reply {
+    return try Hackutd_recycleMoveTrashDividersCallBase(channel)
+      .run(request: request, metadata: metadata)
+  }
+  /// Asynchronous. Unary.
+  internal func moveTrashDividers(_ request: Hackutd_Action, completion: @escaping (Hackutd_Reply?, CallResult) -> Void) throws -> Hackutd_recycleMoveTrashDividersCall {
+    return try Hackutd_recycleMoveTrashDividersCallBase(channel)
       .start(request: request, metadata: metadata, completion: completion)
   }
 

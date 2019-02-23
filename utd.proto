@@ -21,8 +21,19 @@ option objc_class_prefix = "HLW";
 
 package hackutd;
 
+enum Decision {
+    LANDFILL = 0;
+    COMPOST = 1;
+    RECYCLE = 2;
+}
+
 service recycle {
   rpc TestEcho (Status) returns (Reply) {}
+  rpc MoveTrashDividers(Action) returns (Reply) {}
+}
+
+message Action {
+    Decision decision = 1;
 }
 
 message Status {

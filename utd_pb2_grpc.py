@@ -19,6 +19,11 @@ class recycleStub(object):
         request_serializer=utd__pb2.Status.SerializeToString,
         response_deserializer=utd__pb2.Reply.FromString,
         )
+    self.MoveTrashDividers = channel.unary_unary(
+        '/hackutd.recycle/MoveTrashDividers',
+        request_serializer=utd__pb2.Action.SerializeToString,
+        response_deserializer=utd__pb2.Reply.FromString,
+        )
 
 
 class recycleServicer(object):
@@ -32,12 +37,24 @@ class recycleServicer(object):
     context.set_details('Method not implemented!')
     raise NotImplementedError('Method not implemented!')
 
+  def MoveTrashDividers(self, request, context):
+    # missing associated documentation comment in .proto file
+    pass
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
 
 def add_recycleServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'TestEcho': grpc.unary_unary_rpc_method_handler(
           servicer.TestEcho,
           request_deserializer=utd__pb2.Status.FromString,
+          response_serializer=utd__pb2.Reply.SerializeToString,
+      ),
+      'MoveTrashDividers': grpc.unary_unary_rpc_method_handler(
+          servicer.MoveTrashDividers,
+          request_deserializer=utd__pb2.Action.FromString,
           response_serializer=utd__pb2.Reply.SerializeToString,
       ),
   }

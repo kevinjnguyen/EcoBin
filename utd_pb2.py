@@ -3,6 +3,7 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
+from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -19,10 +20,71 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='hackutd',
   syntax='proto3',
   serialized_options=_b('\n\022io.hackutd.recycleB\007RecycleP\001\242\002\003HLW'),
-  serialized_pb=_b('\n\tutd.proto\x12\x07hackutd\"\x19\n\x06Status\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x18\n\x05Reply\x12\x0f\n\x07message\x18\x01 \x01(\t28\n\x07recycle\x12-\n\x08TestEcho\x12\x0f.hackutd.Status\x1a\x0e.hackutd.Reply\"\x00\x42%\n\x12io.hackutd.recycleB\x07RecycleP\x01\xa2\x02\x03HLWb\x06proto3')
+  serialized_pb=_b('\n\tutd.proto\x12\x07hackutd\"-\n\x06\x41\x63tion\x12#\n\x08\x64\x65\x63ision\x18\x01 \x01(\x0e\x32\x11.hackutd.Decision\"\x19\n\x06Status\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x18\n\x05Reply\x12\x0f\n\x07message\x18\x01 \x01(\t*2\n\x08\x44\x65\x63ision\x12\x0c\n\x08LANDFILL\x10\x00\x12\x0b\n\x07\x43OMPOST\x10\x01\x12\x0b\n\x07RECYCLE\x10\x02\x32p\n\x07recycle\x12-\n\x08TestEcho\x12\x0f.hackutd.Status\x1a\x0e.hackutd.Reply\"\x00\x12\x36\n\x11MoveTrashDividers\x12\x0f.hackutd.Action\x1a\x0e.hackutd.Reply\"\x00\x42%\n\x12io.hackutd.recycleB\x07RecycleP\x01\xa2\x02\x03HLWb\x06proto3')
 )
 
+_DECISION = _descriptor.EnumDescriptor(
+  name='Decision',
+  full_name='hackutd.Decision',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='LANDFILL', index=0, number=0,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='COMPOST', index=1, number=1,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='RECYCLE', index=2, number=2,
+      serialized_options=None,
+      type=None),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=122,
+  serialized_end=172,
+)
+_sym_db.RegisterEnumDescriptor(_DECISION)
 
+Decision = enum_type_wrapper.EnumTypeWrapper(_DECISION)
+LANDFILL = 0
+COMPOST = 1
+RECYCLE = 2
+
+
+
+_ACTION = _descriptor.Descriptor(
+  name='Action',
+  full_name='hackutd.Action',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='decision', full_name='hackutd.Action.decision', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=22,
+  serialized_end=67,
+)
 
 
 _STATUS = _descriptor.Descriptor(
@@ -51,8 +113,8 @@ _STATUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=22,
-  serialized_end=47,
+  serialized_start=69,
+  serialized_end=94,
 )
 
 
@@ -82,13 +144,23 @@ _REPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=49,
-  serialized_end=73,
+  serialized_start=96,
+  serialized_end=120,
 )
 
+_ACTION.fields_by_name['decision'].enum_type = _DECISION
+DESCRIPTOR.message_types_by_name['Action'] = _ACTION
 DESCRIPTOR.message_types_by_name['Status'] = _STATUS
 DESCRIPTOR.message_types_by_name['Reply'] = _REPLY
+DESCRIPTOR.enum_types_by_name['Decision'] = _DECISION
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+Action = _reflection.GeneratedProtocolMessageType('Action', (_message.Message,), dict(
+  DESCRIPTOR = _ACTION,
+  __module__ = 'utd_pb2'
+  # @@protoc_insertion_point(class_scope:hackutd.Action)
+  ))
+_sym_db.RegisterMessage(Action)
 
 Status = _reflection.GeneratedProtocolMessageType('Status', (_message.Message,), dict(
   DESCRIPTOR = _STATUS,
@@ -113,8 +185,8 @@ _RECYCLE = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=75,
-  serialized_end=131,
+  serialized_start=174,
+  serialized_end=286,
   methods=[
   _descriptor.MethodDescriptor(
     name='TestEcho',
@@ -122,6 +194,15 @@ _RECYCLE = _descriptor.ServiceDescriptor(
     index=0,
     containing_service=None,
     input_type=_STATUS,
+    output_type=_REPLY,
+    serialized_options=None,
+  ),
+  _descriptor.MethodDescriptor(
+    name='MoveTrashDividers',
+    full_name='hackutd.recycle.MoveTrashDividers',
+    index=1,
+    containing_service=None,
+    input_type=_ACTION,
     output_type=_REPLY,
     serialized_options=None,
   ),

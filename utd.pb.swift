@@ -33,6 +33,49 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
   typealias Version = _2
 }
 
+enum Hackutd_Decision: SwiftProtobuf.Enum {
+  typealias RawValue = Int
+  case landfill // = 0
+  case compost // = 1
+  case recycle // = 2
+  case UNRECOGNIZED(Int)
+
+  init() {
+    self = .landfill
+  }
+
+  init?(rawValue: Int) {
+    switch rawValue {
+    case 0: self = .landfill
+    case 1: self = .compost
+    case 2: self = .recycle
+    default: self = .UNRECOGNIZED(rawValue)
+    }
+  }
+
+  var rawValue: Int {
+    switch self {
+    case .landfill: return 0
+    case .compost: return 1
+    case .recycle: return 2
+    case .UNRECOGNIZED(let i): return i
+    }
+  }
+
+}
+
+struct Hackutd_Action {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  var decision: Hackutd_Decision = .landfill
+
+  var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  init() {}
+}
+
 struct Hackutd_Status {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
@@ -60,6 +103,43 @@ struct Hackutd_Reply {
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
 fileprivate let _protobuf_package = "hackutd"
+
+extension Hackutd_Decision: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "LANDFILL"),
+    1: .same(proto: "COMPOST"),
+    2: .same(proto: "RECYCLE"),
+  ]
+}
+
+extension Hackutd_Action: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = _protobuf_package + ".Action"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "decision"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      switch fieldNumber {
+      case 1: try decoder.decodeSingularEnumField(value: &self.decision)
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.decision != .landfill {
+      try visitor.visitSingularEnumField(value: self.decision, fieldNumber: 1)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  func _protobuf_generated_isEqualTo(other: Hackutd_Action) -> Bool {
+    if self.decision != other.decision {return false}
+    if unknownFields != other.unknownFields {return false}
+    return true
+  }
+}
 
 extension Hackutd_Status: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".Status"

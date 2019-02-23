@@ -18,6 +18,10 @@ class Trasher(utd_pb2_grpc.recycleServicer):
         print(request.message)
         return utd_pb2.Reply(message='Received: ' + request.message )
 
+    def MoveTrashDividers(self, request, context):
+        print(request.decision)
+        return utd_pb2.Reply(message='Received.')
+
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     utd_pb2_grpc.add_recycleServicer_to_server(Trasher(), server)

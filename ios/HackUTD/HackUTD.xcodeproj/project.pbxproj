@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA2B5DB82221F3EC00339547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DB72221F3EC00339547 /* AppDelegate.swift */; };
+		EA2B5DBA2221F3EC00339547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DB92221F3EC00339547 /* ViewController.swift */; };
+		EA2B5DBD2221F3EC00339547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2B5DBB2221F3EC00339547 /* Main.storyboard */; };
+		EA2B5DBF2221F3EE00339547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2B5DBE2221F3EE00339547 /* Assets.xcassets */; };
+		EA2B5DC22221F3EE00339547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2B5DC02221F3EE00339547 /* LaunchScreen.storyboard */; };
+		EA2B5DCD2221F3EE00339547 /* HackUTDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DCC2221F3EE00339547 /* HackUTDTests.swift */; };
+		EA2B5DD82221F3EE00339547 /* HackUTDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DD72221F3EE00339547 /* HackUTDUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA2B5DC92221F3EE00339547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2B5DAC2221F3EC00339547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2B5DB32221F3EC00339547;
+			remoteInfo = HackUTD;
+		};
+		EA2B5DD42221F3EE00339547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2B5DAC2221F3EC00339547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2B5DB32221F3EC00339547;
+			remoteInfo = HackUTD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA2B5DB42221F3EC00339547 /* HackUTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackUTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2B5DB72221F3EC00339547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA2B5DB92221F3EC00339547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA2B5DBC2221F3EC00339547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA2B5DBE2221F3EE00339547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA2B5DC12221F3EE00339547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA2B5DC32221F3EE00339547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2B5DC82221F3EE00339547 /* HackUTDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackUTDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2B5DCC2221F3EE00339547 /* HackUTDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackUTDTests.swift; sourceTree = "<group>"; };
+		EA2B5DCE2221F3EE00339547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2B5DD32221F3EE00339547 /* HackUTDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackUTDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2B5DD72221F3EE00339547 /* HackUTDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackUTDUITests.swift; sourceTree = "<group>"; };
+		EA2B5DD92221F3EE00339547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA2B5DB12221F3EC00339547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2B5DC52221F3EE00339547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2B5DD02221F3EE00339547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA2B5DAB2221F3EC00339547 = {
+			isa = PBXGroup;
+			children = (
+				EA2B5DB62221F3EC00339547 /* HackUTD */,
+				EA2B5DCB2221F3EE00339547 /* HackUTDTests */,
+				EA2B5DD62221F3EE00339547 /* HackUTDUITests */,
+				EA2B5DB52221F3EC00339547 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA2B5DB52221F3EC00339547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B5DB42221F3EC00339547 /* HackUTD.app */,
+				EA2B5DC82221F3EE00339547 /* HackUTDTests.xctest */,
+				EA2B5DD32221F3EE00339547 /* HackUTDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA2B5DB62221F3EC00339547 /* HackUTD */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B5DB72221F3EC00339547 /* AppDelegate.swift */,
+				EA2B5DB92221F3EC00339547 /* ViewController.swift */,
+				EA2B5DBB2221F3EC00339547 /* Main.storyboard */,
+				EA2B5DBE2221F3EE00339547 /* Assets.xcassets */,
+				EA2B5DC02221F3EE00339547 /* LaunchScreen.storyboard */,
+				EA2B5DC32221F3EE00339547 /* Info.plist */,
+			);
+			path = HackUTD;
+			sourceTree = "<group>";
+		};
+		EA2B5DCB2221F3EE00339547 /* HackUTDTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B5DCC2221F3EE00339547 /* HackUTDTests.swift */,
+				EA2B5DCE2221F3EE00339547 /* Info.plist */,
+			);
+			path = HackUTDTests;
+			sourceTree = "<group>";
+		};
+		EA2B5DD62221F3EE00339547 /* HackUTDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2B5DD72221F3EE00339547 /* HackUTDUITests.swift */,
+				EA2B5DD92221F3EE00339547 /* Info.plist */,
+			);
+			path = HackUTDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA2B5DB32221F3EC00339547 /* HackUTD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2B5DDC2221F3EE00339547 /* Build configuration list for PBXNativeTarget "HackUTD" */;
+			buildPhases = (
+				EA2B5DB02221F3EC00339547 /* Sources */,
+				EA2B5DB12221F3EC00339547 /* Frameworks */,
+				EA2B5DB22221F3EC00339547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackUTD;
+			productName = HackUTD;
+			productReference = EA2B5DB42221F3EC00339547 /* HackUTD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA2B5DC72221F3EE00339547 /* HackUTDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2B5DDF2221F3EE00339547 /* Build configuration list for PBXNativeTarget "HackUTDTests" */;
+			buildPhases = (
+				EA2B5DC42221F3EE00339547 /* Sources */,
+				EA2B5DC52221F3EE00339547 /* Frameworks */,
+				EA2B5DC62221F3EE00339547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2B5DCA2221F3EE00339547 /* PBXTargetDependency */,
+			);
+			name = HackUTDTests;
+			productName = HackUTDTests;
+			productReference = EA2B5DC82221F3EE00339547 /* HackUTDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA2B5DD22221F3EE00339547 /* HackUTDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2B5DE22221F3EE00339547 /* Build configuration list for PBXNativeTarget "HackUTDUITests" */;
+			buildPhases = (
+				EA2B5DCF2221F3EE00339547 /* Sources */,
+				EA2B5DD02221F3EE00339547 /* Frameworks */,
+				EA2B5DD12221F3EE00339547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2B5DD52221F3EE00339547 /* PBXTargetDependency */,
+			);
+			name = HackUTDUITests;
+			productName = HackUTDUITests;
+			productReference = EA2B5DD32221F3EE00339547 /* HackUTDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA2B5DAC2221F3EC00339547 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kevin J Nguyen";
+				TargetAttributes = {
+					EA2B5DB32221F3EC00339547 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EA2B5DC72221F3EE00339547 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EA2B5DB32221F3EC00339547;
+					};
+					EA2B5DD22221F3EE00339547 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EA2B5DB32221F3EC00339547;
+					};
+				};
+			};
+			buildConfigurationList = EA2B5DAF2221F3EC00339547 /* Build configuration list for PBXProject "HackUTD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA2B5DAB2221F3EC00339547;
+			productRefGroup = EA2B5DB52221F3EC00339547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA2B5DB32221F3EC00339547 /* HackUTD */,
+				EA2B5DC72221F3EE00339547 /* HackUTDTests */,
+				EA2B5DD22221F3EE00339547 /* HackUTDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA2B5DB22221F3EC00339547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2B5DC22221F3EE00339547 /* LaunchScreen.storyboard in Resources */,
+				EA2B5DBF2221F3EE00339547 /* Assets.xcassets in Resources */,
+				EA2B5DBD2221F3EC00339547 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2B5DC62221F3EE00339547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2B5DD12221F3EE00339547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA2B5DB02221F3EC00339547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2B5DBA2221F3EC00339547 /* ViewController.swift in Sources */,
+				EA2B5DB82221F3EC00339547 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2B5DC42221F3EE00339547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2B5DCD2221F3EE00339547 /* HackUTDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2B5DCF2221F3EE00339547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2B5DD82221F3EE00339547 /* HackUTDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA2B5DCA2221F3EE00339547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2B5DB32221F3EC00339547 /* HackUTD */;
+			targetProxy = EA2B5DC92221F3EE00339547 /* PBXContainerItemProxy */;
+		};
+		EA2B5DD52221F3EE00339547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2B5DB32221F3EC00339547 /* HackUTD */;
+			targetProxy = EA2B5DD42221F3EE00339547 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA2B5DBB2221F3EC00339547 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA2B5DBC2221F3EC00339547 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA2B5DC02221F3EE00339547 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA2B5DC12221F3EE00339547 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA2B5DDA2221F3EE00339547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA2B5DDB2221F3EE00339547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA2B5DDD2221F3EE00339547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTH3535D42;
+				INFOPLIST_FILE = HackUTD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinjnguyen.hackutd.HackUTD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA2B5DDE2221F3EE00339547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTH3535D42;
+				INFOPLIST_FILE = HackUTD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinjnguyen.hackutd.HackUTD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA2B5DE02221F3EE00339547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HackUTDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinjnguyen.hackutd.HackUTDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackUTD.app/HackUTD";
+			};
+			name = Debug;
+		};
+		EA2B5DE12221F3EE00339547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HackUTDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinjnguyen.hackutd.HackUTDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackUTD.app/HackUTD";
+			};
+			name = Release;
+		};
+		EA2B5DE32221F3EE00339547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HackUTDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinjnguyen.hackutd.HackUTDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackUTD;
+			};
+			name = Debug;
+		};
+		EA2B5DE42221F3EE00339547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HackUTDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinjnguyen.hackutd.HackUTDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HackUTD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA2B5DAF2221F3EC00339547 /* Build configuration list for PBXProject "HackUTD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2B5DDA2221F3EE00339547 /* Debug */,
+				EA2B5DDB2221F3EE00339547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2B5DDC2221F3EE00339547 /* Build configuration list for PBXNativeTarget "HackUTD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2B5DDD2221F3EE00339547 /* Debug */,
+				EA2B5DDE2221F3EE00339547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2B5DDF2221F3EE00339547 /* Build configuration list for PBXNativeTarget "HackUTDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2B5DE02221F3EE00339547 /* Debug */,
+				EA2B5DE12221F3EE00339547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2B5DE22221F3EE00339547 /* Build configuration list for PBXNativeTarget "HackUTDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2B5DE32221F3EE00339547 /* Debug */,
+				EA2B5DE42221F3EE00339547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA2B5DAC2221F3EC00339547 /* Project object */;
+}

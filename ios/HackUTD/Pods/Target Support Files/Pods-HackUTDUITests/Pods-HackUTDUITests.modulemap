@@ -1,0 +1,6 @@
+framework module Pods_HackUTDUITests {
+  umbrella header "Pods-HackUTDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

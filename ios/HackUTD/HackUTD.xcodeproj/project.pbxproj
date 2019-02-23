@@ -17,6 +17,9 @@
 		EA2B5DC22221F3EE00339547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2B5DC02221F3EE00339547 /* LaunchScreen.storyboard */; };
 		EA2B5DCD2221F3EE00339547 /* HackUTDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DCC2221F3EE00339547 /* HackUTDTests.swift */; };
 		EA2B5DD82221F3EE00339547 /* HackUTDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DD72221F3EE00339547 /* HackUTDUITests.swift */; };
+		EA2B5DE72221F5C600339547 /* utd.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DE52221F5C600339547 /* utd.pb.swift */; };
+		EA2B5DE82221F5C600339547 /* utd.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DE62221F5C600339547 /* utd.grpc.swift */; };
+		EA2B5DEC2221F64B00339547 /* RecycleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B5DEB2221F64B00339547 /* RecycleRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		EA2B5DD32221F3EE00339547 /* HackUTDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackUTDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2B5DD72221F3EE00339547 /* HackUTDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackUTDUITests.swift; sourceTree = "<group>"; };
 		EA2B5DD92221F3EE00339547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2B5DE52221F5C600339547 /* utd.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utd.pb.swift; sourceTree = "<group>"; };
+		EA2B5DE62221F5C600339547 /* utd.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utd.grpc.swift; sourceTree = "<group>"; };
+		EA2B5DEB2221F64B00339547 /* RecycleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +115,6 @@
 				C55B40A8CC9F3B1B749B9F38 /* Pods-HackUTDUITests.debug.xcconfig */,
 				1FF8056A51584041B16E548F /* Pods-HackUTDUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,12 +143,15 @@
 		EA2B5DB62221F3EC00339547 /* HackUTD */ = {
 			isa = PBXGroup;
 			children = (
+				EA2B5DE62221F5C600339547 /* utd.grpc.swift */,
+				EA2B5DE52221F5C600339547 /* utd.pb.swift */,
 				EA2B5DB72221F3EC00339547 /* AppDelegate.swift */,
 				EA2B5DB92221F3EC00339547 /* ViewController.swift */,
 				EA2B5DBB2221F3EC00339547 /* Main.storyboard */,
 				EA2B5DBE2221F3EE00339547 /* Assets.xcassets */,
 				EA2B5DC02221F3EE00339547 /* LaunchScreen.storyboard */,
 				EA2B5DC32221F3EE00339547 /* Info.plist */,
+				EA2B5DEB2221F64B00339547 /* RecycleRepository.swift */,
 			);
 			path = HackUTD;
 			sourceTree = "<group>";
@@ -400,8 +408,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2B5DE82221F5C600339547 /* utd.grpc.swift in Sources */,
 				EA2B5DBA2221F3EC00339547 /* ViewController.swift in Sources */,
 				EA2B5DB82221F3EC00339547 /* AppDelegate.swift in Sources */,
+				EA2B5DE72221F5C600339547 /* utd.pb.swift in Sources */,
+				EA2B5DEC2221F64B00339547 /* RecycleRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

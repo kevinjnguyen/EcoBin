@@ -22,4 +22,30 @@ class RecycleRepository {
         dummyRequest.message = "Hello everyone."
         try client.testEcho(dummyRequest)
     }
+    
+    func shouldRecycle() throws {
+        let decision = Hackutd_Decision.recycle
+        try sendMoveTrashDividers(type: decision)
+    }
+    
+    func shouldLandfill() throws {
+        let decision = Hackutd_Decision.landfill
+        try sendMoveTrashDividers(type: decision)
+    }
+    
+    func shouldCompost() throws {
+        let decision = Hackutd_Decision.compost
+        try sendMoveTrashDividers(type: decision)
+    }
+    
+    func shouldReject() throws {
+        let decision = Hackutd_Decision.reject
+        try sendMoveTrashDividers(type: decision)
+    }
+    
+    private func sendMoveTrashDividers(type: Hackutd_Decision) throws {
+        var action = Hackutd_Action()
+        action.decision = type
+        try client.moveTrashDividers(action)
+    }
 }

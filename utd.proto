@@ -25,6 +25,7 @@ enum Decision {
     LANDFILL = 0;
     COMPOST = 1;
     RECYCLE = 2;
+    REJECT = 3;
 }
 
 service recycle {

@@ -23,6 +23,34 @@ class ViewController: UIViewController {
         }
     }
 
-
+    @IBAction func didPressRecycle(_ sender: Any) {
+        do {
+            try recycle_rep.shouldRecycle()
+        } catch {
+            print("error")
+        }
+    }
+    
+    @IBAction func didPressLandfill(_ sender: Any) {
+        do {
+            try recycle_rep.shouldLandfill()
+        } catch {
+            print("error")
+        }
+    }
+    @IBAction func didPressCompost(_ sender: Any) {
+        do {
+            try recycle_rep.shouldCompost()
+        } catch {
+            print("error")
+        }
+    }
+    @IBAction func didPressReject(_ sender: Any) {
+        do {
+            try recycle_rep.shouldReject()
+        } catch {
+            print("error")
+        }
+    }
 }
 

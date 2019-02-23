@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='hackutd',
   syntax='proto3',
   serialized_options=_b('\n\022io.hackutd.recycleB\007RecycleP\001\242\002\003HLW'),
-  serialized_pb=_b('\n\tutd.proto\x12\x07hackutd\"-\n\x06\x41\x63tion\x12#\n\x08\x64\x65\x63ision\x18\x01 \x01(\x0e\x32\x11.hackutd.Decision\"\x19\n\x06Status\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x18\n\x05Reply\x12\x0f\n\x07message\x18\x01 \x01(\t*2\n\x08\x44\x65\x63ision\x12\x0c\n\x08LANDFILL\x10\x00\x12\x0b\n\x07\x43OMPOST\x10\x01\x12\x0b\n\x07RECYCLE\x10\x02\x32p\n\x07recycle\x12-\n\x08TestEcho\x12\x0f.hackutd.Status\x1a\x0e.hackutd.Reply\"\x00\x12\x36\n\x11MoveTrashDividers\x12\x0f.hackutd.Action\x1a\x0e.hackutd.Reply\"\x00\x42%\n\x12io.hackutd.recycleB\x07RecycleP\x01\xa2\x02\x03HLWb\x06proto3')
+  serialized_pb=_b('\n\tutd.proto\x12\x07hackutd\"-\n\x06\x41\x63tion\x12#\n\x08\x64\x65\x63ision\x18\x01 \x01(\x0e\x32\x11.hackutd.Decision\"\x19\n\x06Status\x12\x0f\n\x07message\x18\x01 \x01(\t\"\x18\n\x05Reply\x12\x0f\n\x07message\x18\x01 \x01(\t*>\n\x08\x44\x65\x63ision\x12\x0c\n\x08LANDFILL\x10\x00\x12\x0b\n\x07\x43OMPOST\x10\x01\x12\x0b\n\x07RECYCLE\x10\x02\x12\n\n\x06REJECT\x10\x03\x32p\n\x07recycle\x12-\n\x08TestEcho\x12\x0f.hackutd.Status\x1a\x0e.hackutd.Reply\"\x00\x12\x36\n\x11MoveTrashDividers\x12\x0f.hackutd.Action\x1a\x0e.hackutd.Reply\"\x00\x42%\n\x12io.hackutd.recycleB\x07RecycleP\x01\xa2\x02\x03HLWb\x06proto3')
 )
 
 _DECISION = _descriptor.EnumDescriptor(
@@ -41,11 +41,15 @@ _DECISION = _descriptor.EnumDescriptor(
       name='RECYCLE', index=2, number=2,
       serialized_options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='REJECT', index=3, number=3,
+      serialized_options=None,
+      type=None),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=122,
-  serialized_end=172,
+  serialized_end=184,
 )
 _sym_db.RegisterEnumDescriptor(_DECISION)
 
@@ -53,6 +57,7 @@ Decision = enum_type_wrapper.EnumTypeWrapper(_DECISION)
 LANDFILL = 0
 COMPOST = 1
 RECYCLE = 2
+REJECT = 3
 
 
 
@@ -185,8 +190,8 @@ _RECYCLE = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=174,
-  serialized_end=286,
+  serialized_start=186,
+  serialized_end=298,
   methods=[
   _descriptor.MethodDescriptor(
     name='TestEcho',

@@ -38,6 +38,7 @@ enum Hackutd_Decision: SwiftProtobuf.Enum {
   case landfill // = 0
   case compost // = 1
   case recycle // = 2
+  case reject // = 3
   case UNRECOGNIZED(Int)
 
   init() {
@@ -49,6 +50,7 @@ enum Hackutd_Decision: SwiftProtobuf.Enum {
     case 0: self = .landfill
     case 1: self = .compost
     case 2: self = .recycle
+    case 3: self = .reject
     default: self = .UNRECOGNIZED(rawValue)
     }
   }
@@ -58,6 +60,7 @@ enum Hackutd_Decision: SwiftProtobuf.Enum {
     case .landfill: return 0
     case .compost: return 1
     case .recycle: return 2
+    case .reject: return 3
     case .UNRECOGNIZED(let i): return i
     }
   }
@@ -109,6 +112,7 @@ extension Hackutd_Decision: SwiftProtobuf._ProtoNameProviding {
     0: .same(proto: "LANDFILL"),
     1: .same(proto: "COMPOST"),
     2: .same(proto: "RECYCLE"),
+    3: .same(proto: "REJECT"),
   ]
 }
 

@@ -1,4 +1,5 @@
 PODS:
+  - AAInfographics (2.0.4)
   - BoringSSL (10.0.6):
     - BoringSSL/Implementation (= 10.0.6)
     - BoringSSL/Interface (= 10.0.6)
@@ -25,11 +26,13 @@ PODS:
   - SwiftProtobuf (1.1.2)
 
 DEPENDENCIES:
+  - AAInfographics
   - SwiftGRPC
   - SwiftProtobuf (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AAInfographics
     - BoringSSL
     - gRPC-Core
     - nanopb
@@ -37,12 +40,13 @@ SPEC REPOS:
     - SwiftProtobuf
 
 SPEC CHECKSUMS:
+  AAInfographics: 10f87e06fc007a0adbb05de020e4a2fe3119f8de
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   gRPC-Core: 9696b220565b283e021cf2722d473a4a74b7622a
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwiftGRPC: f9dcbc329b17c1cf20216ab0e24208189f880412
   SwiftProtobuf: 7147b8ec19c8c0694a45155d989ea9e6dedaf51f
 
-PODFILE CHECKSUM: 5bfeae39973e09e7e6b70ca7ea8a9529c8a6159a
+PODFILE CHECKSUM: a4a99a9d6c26f5d8bf858dfeaf33d74c1c3da864
 
 COCOAPODS: 1.5.3

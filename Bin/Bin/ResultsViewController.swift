@@ -19,6 +19,12 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var mainStackView: UIStackView!
     @IBOutlet weak var secondaryStackView: UIStackView!
     @IBOutlet weak var recycleButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    lazy var confettiView: SAConfettiView = {
+        let confetti = SAConfettiView(frame: self.view.bounds)
+        return confetti
+    }()
     
     var classifications: [VNClassificationObservation]?
     var category: String?
@@ -35,33 +41,59 @@ class ResultsViewController: UIViewController {
     }
     
     @IBAction func recycle(_ sender: Any) {
+        activityIndicator.isHidden = false
+        recycleButton.setTitle("", for: UIControl.State.normal)
+        activityIndicator.startAnimating()
+        
         guard let trash = category else {
             return
         }
+        
+        var finalCategory: String? = nil
         
         switch trash {
         case "Trash":
             do {
                 try RecycleRepository.shared.shouldLandfill()
+                finalCategory = "Landfill"
             } catch {
-                print("error")
+                NativePopup.show(image: Preset.Feedback.cross, title: "Error", message: "Could not connect with gRPC Server")
             }
         case "Plastic":
             do {
                 try RecycleRepository.shared.shouldCompost()
+                finalCategory = "Plastic"
             } catch {
-                print("error")
+                NativePopup.show(image: Preset.Feedback.cross, title: "Error", message: "Could not connect with gRPC Server")
             }
         default:
             do {
                 try RecycleRepository.shared.shouldRecycle()
+                finalCategory = "Recyclables"
             } catch {
-                print("error")
+                NativePopup.show(image: Preset.Feedback.cross, title: "Error", message: "Could not connect with gRPC Server")
             }
+        }
+        
+        if finalCategory != nil {
+        // To make it look like we are doing complicated stuff
+            view.addSubview(confettiView)
+            confettiView.startConfetti()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.activityIndicator.isHidden = true
+                self.recycleButton.setTitle("Recycle", for: UIControl.State.normal)
+                self.activityIndicator.stopAnimating()
+                NativePopup.show(image: UIImage(named: "leaf")!, title: "Placed in \(finalCategory!)", message: nil, duration: 1.0, initialEffectType: .fadeIn)
+                self.confettiView.stopConfetti()
+                self.dismiss(animated: true, completion: nil)
+            }
+        } else {
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
     func setup() {
+        activityIndicator.isHidden = true
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 12.0
         imageView.image = image

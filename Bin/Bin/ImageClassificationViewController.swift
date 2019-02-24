@@ -100,6 +100,9 @@ class ImageClassificationViewController: UIViewController {
         
         capturePhotoOutput.capturePhoto(with: photoSettings, delegate: self)
     }
+    
+    @IBAction func showCharts(_ sender: Any) {
+    }
 }
 
 

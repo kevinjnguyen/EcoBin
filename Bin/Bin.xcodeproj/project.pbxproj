@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		20354CBDFFE857E173287DA6 /* Pods_Bin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2071CD72237BCD04780B781 /* Pods_Bin.framework */; };
+		CA1B06EF2222D0C40029E71B /* LongerImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06EE2222D0C30029E71B /* LongerImageClassifier.mlmodel */; };
+		CA1B06F12222E1250029E71B /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06F02222E1250029E71B /* ChartsViewController.swift */; };
+		CA1B07042222E3540029E71B /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06F32222E3530029E71B /* Preset.swift */; };
+		CA1B07052222E3540029E71B /* AnimatableCrossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06F52222E3530029E71B /* AnimatableCrossView.swift */; };
+		CA1B07062222E3540029E71B /* HasAnimatablePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06F62222E3530029E71B /* HasAnimatablePath.swift */; };
+		CA1B07072222E3540029E71B /* AnimatableDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06F72222E3530029E71B /* AnimatableDoneView.swift */; };
+		CA1B07082222E3540029E71B /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06F82222E3530029E71B /* Animatable.swift */; };
+		CA1B070A2222E3540029E71B /* InitialEffectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06FA2222E3530029E71B /* InitialEffectType.swift */; };
+		CA1B070B2222E3540029E71B /* NativePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06FB2222E3530029E71B /* NativePopup.swift */; };
+		CA1B070C2222E3540029E71B /* UIView.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06FD2222E3530029E71B /* UIView.extension.swift */; };
+		CA1B070D2222E3540029E71B /* UIImage.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06FE2222E3530029E71B /* UIImage.extension.swift */; };
+		CA1B070E2222E3540029E71B /* Bundle.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B06FF2222E3530029E71B /* Bundle.extension.swift */; };
+		CA1B070F2222E3540029E71B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B07002222E3530029E71B /* Extension.swift */; };
+		CA1B07102222E3540029E71B /* UIImageConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B07012222E3530029E71B /* UIImageConvertible.swift */; };
+		CA1B07132222E85E0029E71B /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B07122222E85E0029E71B /* SAConfettiView.swift */; };
 		CA998D7E222227F400D1BE7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA998D7D222227F400D1BE7D /* AppDelegate.swift */; };
 		CA998D83222227F400D1BE7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA998D81222227F400D1BE7D /* Main.storyboard */; };
 		CA998D85222227F600D1BE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA998D84222227F600D1BE7D /* Assets.xcassets */; };
@@ -25,6 +40,22 @@
 		1FED0A460EE425FC828F4575 /* Pods-Bin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bin/Pods-Bin.debug.xcconfig"; sourceTree = "<group>"; };
 		C2071CD72237BCD04780B781 /* Pods_Bin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C434700EAEECED0BB9EA8D12 /* Pods-Bin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bin/Pods-Bin.release.xcconfig"; sourceTree = "<group>"; };
+		CA1B06EE2222D0C30029E71B /* LongerImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LongerImageClassifier.mlmodel; sourceTree = "<group>"; };
+		CA1B06F02222E1250029E71B /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		CA1B06F32222E3530029E71B /* Preset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
+		CA1B06F52222E3530029E71B /* AnimatableCrossView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableCrossView.swift; sourceTree = "<group>"; };
+		CA1B06F62222E3530029E71B /* HasAnimatablePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasAnimatablePath.swift; sourceTree = "<group>"; };
+		CA1B06F72222E3530029E71B /* AnimatableDoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableDoneView.swift; sourceTree = "<group>"; };
+		CA1B06F82222E3530029E71B /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
+		CA1B06FA2222E3530029E71B /* InitialEffectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialEffectType.swift; sourceTree = "<group>"; };
+		CA1B06FB2222E3530029E71B /* NativePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativePopup.swift; sourceTree = "<group>"; };
+		CA1B06FD2222E3530029E71B /* UIView.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.extension.swift; sourceTree = "<group>"; };
+		CA1B06FE2222E3530029E71B /* UIImage.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.extension.swift; sourceTree = "<group>"; };
+		CA1B06FF2222E3530029E71B /* Bundle.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.extension.swift; sourceTree = "<group>"; };
+		CA1B07002222E3530029E71B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CA1B07012222E3530029E71B /* UIImageConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageConvertible.swift; sourceTree = "<group>"; };
+		CA1B07022222E3530029E71B /* NativePopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativePopup.h; sourceTree = "<group>"; };
+		CA1B07122222E85E0029E71B /* SAConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
 		CA998D7A222227F400D1BE7D /* Bin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA998D7D222227F400D1BE7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA998D82222227F400D1BE7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +100,43 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CA1B06F22222E3530029E71B /* NativePopup */ = {
+			isa = PBXGroup;
+			children = (
+				CA1B06F32222E3530029E71B /* Preset.swift */,
+				CA1B06F42222E3530029E71B /* Animatable */,
+				CA1B06FA2222E3530029E71B /* InitialEffectType.swift */,
+				CA1B06FB2222E3530029E71B /* NativePopup.swift */,
+				CA1B06FC2222E3530029E71B /* Extensions */,
+				CA1B07012222E3530029E71B /* UIImageConvertible.swift */,
+				CA1B07022222E3530029E71B /* NativePopup.h */,
+			);
+			name = NativePopup;
+			path = "../../../../Downloads/NativePopup-master/NativePopup";
+			sourceTree = "<group>";
+		};
+		CA1B06F42222E3530029E71B /* Animatable */ = {
+			isa = PBXGroup;
+			children = (
+				CA1B06F52222E3530029E71B /* AnimatableCrossView.swift */,
+				CA1B06F62222E3530029E71B /* HasAnimatablePath.swift */,
+				CA1B06F72222E3530029E71B /* AnimatableDoneView.swift */,
+				CA1B06F82222E3530029E71B /* Animatable.swift */,
+			);
+			path = Animatable;
+			sourceTree = "<group>";
+		};
+		CA1B06FC2222E3530029E71B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA1B06FD2222E3530029E71B /* UIView.extension.swift */,
+				CA1B06FE2222E3530029E71B /* UIImage.extension.swift */,
+				CA1B06FF2222E3530029E71B /* Bundle.extension.swift */,
+				CA1B07002222E3530029E71B /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CA998D71222227F400D1BE7D = {
 			isa = PBXGroup;
 			children = (
@@ -90,15 +158,19 @@
 		CA998D7C222227F400D1BE7D /* Bin */ = {
 			isa = PBXGroup;
 			children = (
+				CA1B06F22222E3530029E71B /* NativePopup */,
 				CA998D7D222227F400D1BE7D /* AppDelegate.swift */,
 				CA998D912222280B00D1BE7D /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				CA998D902222280B00D1BE7D /* ImageClassificationViewController.swift */,
 				CA998D9522222B5000D1BE7D /* ResultsViewController.swift */,
 				CA998D8F2222280A00D1BE7D /* ImageClassifier.mlmodel */,
+				CA1B06EE2222D0C30029E71B /* LongerImageClassifier.mlmodel */,
 				CA998D972222647000D1BE7D /* RecycleRepository.swift */,
 				CA998D982222647000D1BE7D /* utd.grpc.swift */,
 				CA998D992222647000D1BE7D /* utd.pb.swift */,
 				CA998D81222227F400D1BE7D /* Main.storyboard */,
+				CA1B06F02222E1250029E71B /* ChartsViewController.swift */,
+				CA1B07122222E85E0029E71B /* SAConfettiView.swift */,
 				CA998D84222227F600D1BE7D /* Assets.xcassets */,
 				CA998D86222227F600D1BE7D /* LaunchScreen.storyboard */,
 				CA998D89222227F600D1BE7D /* Info.plist */,
@@ -182,6 +254,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Bin/Pods-Bin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AAInfographics/AAInfographics.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
@@ -190,6 +263,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAInfographics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGRPC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
@@ -226,14 +300,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1B070B2222E3540029E71B /* NativePopup.swift in Sources */,
+				CA1B07072222E3540029E71B /* AnimatableDoneView.swift in Sources */,
+				CA1B070E2222E3540029E71B /* Bundle.extension.swift in Sources */,
+				CA1B070D2222E3540029E71B /* UIImage.extension.swift in Sources */,
 				CA998D9B2222647000D1BE7D /* utd.grpc.swift in Sources */,
+				CA1B06F12222E1250029E71B /* ChartsViewController.swift in Sources */,
+				CA1B06EF2222D0C40029E71B /* LongerImageClassifier.mlmodel in Sources */,
+				CA1B07082222E3540029E71B /* Animatable.swift in Sources */,
 				CA998D932222280B00D1BE7D /* ImageClassificationViewController.swift in Sources */,
+				CA1B07102222E3540029E71B /* UIImageConvertible.swift in Sources */,
+				CA1B070F2222E3540029E71B /* Extension.swift in Sources */,
 				CA998D922222280B00D1BE7D /* ImageClassifier.mlmodel in Sources */,
 				CA998D7E222227F400D1BE7D /* AppDelegate.swift in Sources */,
+				CA1B070C2222E3540029E71B /* UIView.extension.swift in Sources */,
 				CA998D9C2222647000D1BE7D /* utd.pb.swift in Sources */,
 				CA998D9A2222647000D1BE7D /* RecycleRepository.swift in Sources */,
+				CA1B07062222E3540029E71B /* HasAnimatablePath.swift in Sources */,
+				CA1B070A2222E3540029E71B /* InitialEffectType.swift in Sources */,
+				CA1B07042222E3540029E71B /* Preset.swift in Sources */,
 				CA998D9622222B5000D1BE7D /* ResultsViewController.swift in Sources */,
 				CA998D942222280B00D1BE7D /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				CA1B07052222E3540029E71B /* AnimatableCrossView.swift in Sources */,
+				CA1B07132222E85E0029E71B /* SAConfettiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

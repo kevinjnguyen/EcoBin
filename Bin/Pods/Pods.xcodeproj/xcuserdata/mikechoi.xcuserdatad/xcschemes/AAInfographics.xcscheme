@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DDAC5D2AC795E10C973DD88E1A3FBC2"
-               BlueprintName = "gRPC-Core"
+               BlueprintIdentifier = "0F7992C80B4AF9BADD056E0669B90797"
+               BlueprintName = "AAInfographics"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "gRPC-Core.framework">
+               BuildableName = "AAInfographics.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

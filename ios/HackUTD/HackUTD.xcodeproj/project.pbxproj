@@ -40,13 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113209267076C742E55D46FD /* Pods-HackUTD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackUTD/Pods-HackUTD.debug.xcconfig"; sourceTree = "<group>"; };
 		1FF8056A51584041B16E548F /* Pods-HackUTDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDUITests.release.xcconfig"; path = "Target Support Files/Pods-HackUTDUITests/Pods-HackUTDUITests.release.xcconfig"; sourceTree = "<group>"; };
 		256E689F9D00874BFF9772AE /* Pods-HackUTDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDTests.debug.xcconfig"; path = "Target Support Files/Pods-HackUTDTests/Pods-HackUTDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		31D70CEC230C78C3F1FBF27A /* Pods-HackUTDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackUTDTests/Pods-HackUTDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		479468196D8221E503A4274D /* Pods_HackUTDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackUTDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7F52A83A72AE5972DFF143 /* Pods-HackUTD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTD.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackUTD/Pods-HackUTD.release.xcconfig"; sourceTree = "<group>"; };
 		6087AE3FCA45D77C4A5B49FE /* Pods-HackUTD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTD.debug.xcconfig"; path = "Target Support Files/Pods-HackUTD/Pods-HackUTD.debug.xcconfig"; sourceTree = "<group>"; };
+		6466EE50FFDABBC24ED8C581 /* Pods-HackUTDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackUTDTests/Pods-HackUTDTests.release.xcconfig"; sourceTree = "<group>"; };
 		72E6CBC522DD965B58BED629 /* Pods_HackUTDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackUTDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A917021F24C5E2AD2857D22 /* Pods-HackUTDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackUTDUITests/Pods-HackUTDUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A3BB2A97BB230CBAB44FAF28 /* Pods-HackUTDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDTests.release.xcconfig"; path = "Target Support Files/Pods-HackUTDTests/Pods-HackUTDTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD00A0F3E662DFA840B8ABD3 /* Pods-HackUTD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTD.release.xcconfig"; path = "Target Support Files/Pods-HackUTD/Pods-HackUTD.release.xcconfig"; sourceTree = "<group>"; };
+		ADE6FC8D87DA5C2F0E6ED9A1 /* Pods-HackUTDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackUTDUITests/Pods-HackUTDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4ECDF73DD3A2AFE54E7890A /* Pods_HackUTD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackUTD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55B40A8CC9F3B1B749B9F38 /* Pods-HackUTDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUTDUITests.debug.xcconfig"; path = "Target Support Files/Pods-HackUTDUITests/Pods-HackUTDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA2B5DB42221F3EC00339547 /* HackUTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackUTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +120,12 @@
 				A3BB2A97BB230CBAB44FAF28 /* Pods-HackUTDTests.release.xcconfig */,
 				C55B40A8CC9F3B1B749B9F38 /* Pods-HackUTDUITests.debug.xcconfig */,
 				1FF8056A51584041B16E548F /* Pods-HackUTDUITests.release.xcconfig */,
+				113209267076C742E55D46FD /* Pods-HackUTD.debug.xcconfig */,
+				4B7F52A83A72AE5972DFF143 /* Pods-HackUTD.release.xcconfig */,
+				31D70CEC230C78C3F1FBF27A /* Pods-HackUTDTests.debug.xcconfig */,
+				6466EE50FFDABBC24ED8C581 /* Pods-HackUTDTests.release.xcconfig */,
+				ADE6FC8D87DA5C2F0E6ED9A1 /* Pods-HackUTDUITests.debug.xcconfig */,
+				8A917021F24C5E2AD2857D22 /* Pods-HackUTDUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -310,15 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HackUTDUITests-checkManifestLockResult.txt",
 			);
@@ -332,10 +340,8 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
@@ -343,8 +349,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGRPC.framework",
@@ -354,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEC262DFF66166E1272FC14E /* [CP] Check Pods Manifest.lock */ = {
@@ -362,15 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HackUTDTests-checkManifestLockResult.txt",
 			);
@@ -384,15 +384,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HackUTD-checkManifestLockResult.txt",
 			);
@@ -585,7 +581,7 @@
 		};
 		EA2B5DDD2221F3EE00339547 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6087AE3FCA45D77C4A5B49FE /* Pods-HackUTD.debug.xcconfig */;
+			baseConfigurationReference = 113209267076C742E55D46FD /* Pods-HackUTD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,7 +600,7 @@
 		};
 		EA2B5DDE2221F3EE00339547 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD00A0F3E662DFA840B8ABD3 /* Pods-HackUTD.release.xcconfig */;
+			baseConfigurationReference = 4B7F52A83A72AE5972DFF143 /* Pods-HackUTD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,7 +619,7 @@
 		};
 		EA2B5DE02221F3EE00339547 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 256E689F9D00874BFF9772AE /* Pods-HackUTDTests.debug.xcconfig */;
+			baseConfigurationReference = 31D70CEC230C78C3F1FBF27A /* Pods-HackUTDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -644,7 +640,7 @@
 		};
 		EA2B5DE12221F3EE00339547 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3BB2A97BB230CBAB44FAF28 /* Pods-HackUTDTests.release.xcconfig */;
+			baseConfigurationReference = 6466EE50FFDABBC24ED8C581 /* Pods-HackUTDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -665,7 +661,7 @@
 		};
 		EA2B5DE32221F3EE00339547 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C55B40A8CC9F3B1B749B9F38 /* Pods-HackUTDUITests.debug.xcconfig */;
+			baseConfigurationReference = ADE6FC8D87DA5C2F0E6ED9A1 /* Pods-HackUTDUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -685,7 +681,7 @@
 		};
 		EA2B5DE42221F3EE00339547 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FF8056A51584041B16E548F /* Pods-HackUTDUITests.release.xcconfig */;
+			baseConfigurationReference = 8A917021F24C5E2AD2857D22 /* Pods-HackUTDUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

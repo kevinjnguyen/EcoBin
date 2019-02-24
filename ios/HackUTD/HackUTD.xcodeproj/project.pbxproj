@@ -341,7 +341,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
@@ -358,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HackUTD/Pods-HackUTD-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEC262DFF66166E1272FC14E /* [CP] Check Pods Manifest.lock */ = {
@@ -581,7 +581,7 @@
 		};
 		EA2B5DDD2221F3EE00339547 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 113209267076C742E55D46FD /* Pods-HackUTD.debug.xcconfig */;
+			baseConfigurationReference = 6087AE3FCA45D77C4A5B49FE /* Pods-HackUTD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -600,7 +600,7 @@
 		};
 		EA2B5DDE2221F3EE00339547 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B7F52A83A72AE5972DFF143 /* Pods-HackUTD.release.xcconfig */;
+			baseConfigurationReference = AD00A0F3E662DFA840B8ABD3 /* Pods-HackUTD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,7 +619,7 @@
 		};
 		EA2B5DE02221F3EE00339547 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31D70CEC230C78C3F1FBF27A /* Pods-HackUTDTests.debug.xcconfig */;
+			baseConfigurationReference = 256E689F9D00874BFF9772AE /* Pods-HackUTDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -640,7 +640,7 @@
 		};
 		EA2B5DE12221F3EE00339547 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6466EE50FFDABBC24ED8C581 /* Pods-HackUTDTests.release.xcconfig */;
+			baseConfigurationReference = A3BB2A97BB230CBAB44FAF28 /* Pods-HackUTDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -661,7 +661,7 @@
 		};
 		EA2B5DE32221F3EE00339547 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADE6FC8D87DA5C2F0E6ED9A1 /* Pods-HackUTDUITests.debug.xcconfig */;
+			baseConfigurationReference = C55B40A8CC9F3B1B749B9F38 /* Pods-HackUTDUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -681,7 +681,7 @@
 		};
 		EA2B5DE42221F3EE00339547 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A917021F24C5E2AD2857D22 /* Pods-HackUTDUITests.release.xcconfig */;
+			baseConfigurationReference = 1FF8056A51584041B16E548F /* Pods-HackUTDUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

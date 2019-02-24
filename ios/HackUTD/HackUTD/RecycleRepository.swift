@@ -11,7 +11,7 @@ import SwiftGRPC
 
 class RecycleRepository {
     
-    static let RASPBERRY_IP = "127.0.0.1:50051"
+    static let RASPBERRY_IP = "172.20.10.3:50051"
     static let shared = RecycleRepository()
     private init() {}
 

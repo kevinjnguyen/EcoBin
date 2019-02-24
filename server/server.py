@@ -36,24 +36,24 @@ class Trasher(utd_pb2_grpc.recycleServicer):
         return utd_pb2.Reply(message='Received: ' + request.message )
 
     def MoveTrashDividers(self, request, context):
-        if (request.decision == 1):
+        if (request.decision == 0):
             left_servo.ChangeDutyCycle(10.5)
             time.sleep(0.1)
             middle_servo.ChangeDutyCycle(10)
             time.sleep(0.1)
             right_servo.ChangeDutyCycle(5)
             time.sleep(0.1)
-        elif (request.decision == 0):
-            left_servo.ChangeDutyCycle(8)
+        elif (request.decision == 1):
+            left_servo.ChangeDutyCycle(5)
             time.sleep(0.1)
-            middle_servo.ChangeDutyCycle(7.3)
+            middle_servo.ChangeDutyCycle(4)
             time.sleep(0.1)
             right_servo.ChangeDutyCycle(5)
             time.sleep(0.1)
         else:
-            left_servo.ChangeDutyCycle(5)
+            left_servo.ChangeDutyCycle(8)
             time.sleep(0.1)
-            middle_servo.ChangeDutyCycle(4)
+            middle_servo.ChangeDutyCycle(7.3)
             time.sleep(0.1)
             right_servo.ChangeDutyCycle(5)
             time.sleep(0.1)

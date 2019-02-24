@@ -51,15 +51,15 @@ class ResultsViewController: UIViewController {
         
         var finalCategory: String? = nil
         
-        switch trash {
-        case "Trash":
+        switch trash.lowercased() {
+        case "trash":
             do {
                 try RecycleRepository.shared.shouldLandfill()
                 finalCategory = "Landfill"
             } catch {
                 NativePopup.show(image: Preset.Feedback.cross, title: "Error", message: "Could not connect with gRPC Server")
             }
-        case "Plastic":
+        case "plastic":
             do {
                 try RecycleRepository.shared.shouldCompost()
                 finalCategory = "Plastic"

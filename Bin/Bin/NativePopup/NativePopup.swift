@@ -36,7 +36,6 @@ public class NativePopup: UIView {
         effectView = UIVisualEffectView(effect: UIBlurEffect(style: .extraLight))
 
         let imageValue = image.npImage
-        imageValue.validate()
         switch imageValue {
         case .image(let image):
             imageContentView = UIImageView(image: image)

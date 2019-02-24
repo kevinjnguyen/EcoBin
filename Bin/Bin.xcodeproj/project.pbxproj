@@ -122,8 +122,7 @@
 				CA1B07012222E3530029E71B /* UIImageConvertible.swift */,
 				CA1B07022222E3530029E71B /* NativePopup.h */,
 			);
-			name = NativePopup;
-			path = "../../../../Downloads/NativePopup-master/NativePopup";
+			path = NativePopup;
 			sourceTree = "<group>";
 		};
 		CA1B06F42222E3530029E71B /* Animatable */ = {
